@@ -1,0 +1,4 @@
+{
+  "best_eval_rmse": 0.4824140389760335,
+  "ckpt": "WR_rebuild/outputs/mf6_highcontrast_physics_surrogate/checkpoints/mf6_pilot_unet.pt"
+}

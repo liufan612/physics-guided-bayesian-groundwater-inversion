@@ -1,0 +1,73 @@
+{
+  "target": {
+    "case_id": 160,
+    "dataset_index": 160,
+    "scenario": "stripe",
+    "n_k_observations": 231,
+    "n_head_observations": 300,
+    "latent_rank": 64,
+    "kl_inducing": 900,
+    "kl_length_scale": 12.0,
+    "residual_scale": 0.18,
+    "sigma_k": 0.2,
+    "sigma_h": 0.3,
+    "latent_prior": "z ~ Normal(0, I)",
+    "likelihood": "Normal K likelihood plus Normal hydraulic-head likelihood",
+    "physics_residual_in_inversion": false,
+    "shared_hashes": {
+      "dataset": "0bbec9214af5c6fa665d79d07e472ad1c50d2e2ddcfe7da4b2638459fc040896",
+      "surrogate_checkpoint": "5abf2b2db5bc8f64c82466c82810e7138d7b4e68a26a10bda5fdf367b8d1f2a4",
+      "inverse_prior_checkpoint": "fdb794f6710b426704260ab58fe5d440ea547dd6c179492082ac8d9ea0132127",
+      "truth_logk": "7954ad6bd1be86fbfdca06e1f6a195b6a45179e4126b63c27c23a83ac2f1cc9e",
+      "truth_head": "75765492425503da0508980bf0c10059480a95f7798fb3466eeaa3ed1fac8e57",
+      "prior_mean": "a7a29d3da480eed02d567b61d9e95693b1dc227e83837d4aa57ce72e6e22a744",
+      "basis": "e1f78b70c7e48ae246bc270022e02d32d868df2a49d0ec44d4a86500c6e37779",
+      "eigenvalues": "4b8973d2ddca688cc9bd22f35403214953fce000871526241330acbd2f8ceadd",
+      "k_observation_indices": "8e5780f06b88d61b695b16d3d8b70f89a80bda8c919880580bbc6b2aa57ee8b2",
+      "head_observation_indices": "ff606d9ad301d0937e533c64ac464caca17cdc1015ea542767c22e409bfff1c3",
+      "k_observation_values": "dfc0c54f7c6a3842c9ee001e8fd614116f5a1997185ea51d74674b83f9c37df1",
+      "head_observation_values": "53f4230c8ca703533e6e474042cb0ad8ff1d512488a3a660d804141396b006e1"
+    }
+  },
+  "svi": {
+    "steps": 500,
+    "learning_rate": 0.035,
+    "guide": "AutoDiagonalNormal",
+    "posterior_samples": 5000
+  },
+  "mcmc": {
+    "algorithm": "NUTS",
+    "chains": 4,
+    "warmup_steps_per_chain": 1000,
+    "retained_samples_per_chain": 2000,
+    "target_accept": 0.8,
+    "max_tree_depth": 10,
+    "chain_execution": "sequential on one GPU"
+  },
+  "common_analysis_draws_requested": 5000,
+  "seed": 20260625,
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.9.1+cu128",
+    "pyro": "1.9.1",
+    "device": "cuda",
+    "cpu_count": 14,
+    "gpu_name": "NVIDIA GeForce RTX 5060",
+    "gpu_total_memory_bytes": 8546484224,
+    "cuda_runtime": "12.8"
+  },
+  "surrogate_metrics": {
+    "best_eval_rmse": 0.4824140389760335,
+    "ckpt": "WR_rebuild/outputs/mf6_highcontrast_physics_surrogate/checkpoints/mf6_pilot_unet.pt"
+  },
+  "source_paths": {
+    "source_dir": "WR_rebuild/outputs/mf6_highcontrast_physics_surrogate",
+    "surrogate_dir": "WR_rebuild/outputs/mf6_highcontrast_physics_surrogate",
+    "inverse_checkpoint": "WR_rebuild/outputs/sparse_head_inverse_highcontrast_k231_h300_e60/checkpoints/sparse_head_inverse_unet.pt"
+  },
+  "config_checksum": "e8ad4008e157203a0d581cbd60c2e795cb9179de930426065f03f97bf5cdf7f1",
+  "svi_target_checksum": "4f7dadfe3e9e070fe306e79fbb66919ec2120bca3f749279f38205bb4a7378cc",
+  "mcmc_target_checksum": "4f7dadfe3e9e070fe306e79fbb66919ec2120bca3f749279f38205bb4a7378cc",
+  "target_identity_verified": true
+}

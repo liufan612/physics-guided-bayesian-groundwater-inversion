@@ -1,0 +1,33 @@
+{
+  "k231_h300_svi_head_k": {
+    "n_k_obs": 231,
+    "n_head_obs": 300,
+    "method": "svi_head_k",
+    "k_rmse_mean": 0.7998793363571167,
+    "k_r2_mean": 0.6205529173215231,
+    "head_rmse_mean": 0.4830321033795675,
+    "head_r2_mean": 0.9679934740066528,
+    "posterior_std_mean": 0.08105703939994176,
+    "sd_abs_error_corr_mean": 0.010693557304875638
+  },
+  "k231_h300_svi_k_only": {
+    "n_k_obs": 231,
+    "n_head_obs": 300,
+    "method": "svi_k_only",
+    "k_rmse_mean": 0.9155902942021688,
+    "k_r2_mean": 0.5100358327229818,
+    "head_rmse_mean": 0.5260030587514242,
+    "head_r2_mean": 0.9619784394900004,
+    "posterior_std_mean": 0.08418441067139308,
+    "sd_abs_error_corr_mean": 0.010450283939987396
+  },
+  "k231_h300_target_check": {
+    "n_k_obs": 231,
+    "n_head_obs": 300,
+    "k_improvement_percent": 12.637853260106997,
+    "head_non_degrade": true,
+    "target_hit": true
+  },
+  "elapsed_total_seconds": 149.0742633342743,
+  "surrogate_best_eval_rmse": 0.4824140389760335
+}

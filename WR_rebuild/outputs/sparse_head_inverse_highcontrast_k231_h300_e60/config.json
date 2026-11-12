@@ -1,0 +1,12 @@
+{
+  "source_dir": "WR_rebuild/outputs/mf6_highcontrast_physics_surrogate",
+  "out_dir": "WR_rebuild/outputs/sparse_head_inverse_highcontrast_k231_h300_e60",
+  "k_obs_count": 231,
+  "head_obs_count": 300,
+  "epochs": 60,
+  "augment": 5,
+  "batch_size": 3,
+  "base": 32,
+  "seed": 20260625,
+  "eval_only": false
+}

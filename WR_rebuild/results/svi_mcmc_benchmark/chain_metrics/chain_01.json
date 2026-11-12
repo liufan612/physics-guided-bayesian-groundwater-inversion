@@ -1,0 +1,17 @@
+{
+  "chain": 1,
+  "seed": 20261625,
+  "warmup_steps": 1000,
+  "retained_samples": 2000,
+  "target_accept_probability": 0.8,
+  "max_tree_depth": 10,
+  "wall_seconds": 258.14564719994087,
+  "warmup_seconds": 77.65212129999418,
+  "sampling_seconds": 180.4935258999467,
+  "pi_unet_inference_evaluations": 40250,
+  "divergence_count": 0,
+  "divergence_indices": [],
+  "acceptance_rate": 1.0,
+  "final_step_size": 0.3726265533844877,
+  "peak_gpu_memory_bytes": 344632320
+}

@@ -1,0 +1,10 @@
+{
+  "idw_k_only": {
+    "k_rmse_mean": 0.9199003338813782,
+    "k_r2_mean": 0.50548175573349
+  },
+  "sparse_head_inverse_prior": {
+    "k_rmse_mean": 0.8058005412419637,
+    "k_r2_mean": 0.6139747063318889
+  }
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this version when using the synthetic data, code, or model checkpoints."
+type: software
+title: "Physics-guided variational Bayesian groundwater inversion"
+authors:
+  - family-names: Liu
+    given-names: Fan
+version: 1.0.0
+date-released: 2026-11-12
+repository-code: "https://github.com/liufan612/physics-guided-bayesian-groundwater-inversion"
+url: "https://github.com/liufan612/physics-guided-bayesian-groundwater-inversion/releases/tag/v1.0.0"
+license: MIT

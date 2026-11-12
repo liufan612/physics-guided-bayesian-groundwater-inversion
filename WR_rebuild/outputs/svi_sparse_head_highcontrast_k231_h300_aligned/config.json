@@ -1,0 +1,18 @@
+{
+  "source_dir": "WR_rebuild/outputs/mf6_highcontrast_physics_surrogate",
+  "surrogate_dir": "WR_rebuild/outputs/mf6_highcontrast_physics_surrogate",
+  "inverse_ckpt": "WR_rebuild/outputs/sparse_head_inverse_highcontrast_k231_h300_e60/checkpoints/sparse_head_inverse_unet.pt",
+  "out_dir": "WR_rebuild/outputs/svi_sparse_head_highcontrast_k231_h300_aligned",
+  "max_eval_cases_per_scenario": null,
+  "k_obs_counts": "231",
+  "head_obs_counts": "300",
+  "svi_steps": 500,
+  "posterior_samples": 20,
+  "kl_rank": 64,
+  "kl_n_inducing": 900,
+  "kl_length_scale": 12.0,
+  "residual_scale": 0.18,
+  "head_noise": 0.3,
+  "logk_noise": 0.2,
+  "seed": 20260625
+}

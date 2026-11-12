@@ -1,0 +1,13 @@
+metric,method,value
+ln K MAE,SVI,0.5164733529090881
+ln K MAE,MCMC,0.5156149864196777
+Hydraulic-head MAE,SVI,0.3928026854991913
+Hydraulic-head MAE,MCMC,0.3930974006652832
+High-K Jaccard overlap,SVI,0.5359530631736935
+High-K Jaccard overlap,MCMC,0.5364689843217451
+Mean posterior SD (ln K),SVI,0.0847065299749374
+Mean posterior SD (ln K),MCMC,0.0882994979619979
+Median posterior SD (ln K),SVI,0.0847300961613655
+Median posterior SD (ln K),MCMC,0.0855732709169387
+Mean 95% interval width (ln K),SVI,0.3316729892306858
+Mean 95% interval width (ln K),MCMC,0.3456822408040365
