@@ -33,7 +33,6 @@ if str(SCRIPTS) not in sys.path:
 from run_mf6_pilot_experiments import (  # noqa: E402
     build_kl_basis,
     choose_obs,
-    ensure_train_normalization_stats,
     field_metrics,
     load_dataset_from_dir,
     load_surrogate,
@@ -780,7 +779,6 @@ def main() -> int:
     cfg.seed = args.seed
 
     dataset = load_dataset_from_dir(args.source_dir)
-    ensure_train_normalization_stats(dataset)
     case_index = find_case_index(dataset, args.case_id, args.scenario)
     surrogate_result = load_surrogate(dataset, cfg, args.surrogate_dir)
     if surrogate_result is None:

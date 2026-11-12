@@ -63,6 +63,8 @@ python WR_rebuild/scripts/run_sparse_head_inverse_unet_experiment.py --source-di
 
 The estimator supplies the observation-informed mean around which the synthetic KLE-derived conductivity perturbation is inferred. The released SVI–NUTS benchmark uses 64 latent coefficients, 231 conductivity observations, and 300 head observations.
 
+Inference reads the normalization constants stored with the released dataset to reproduce the archived prior-mean estimate. Forward retraining fits its normalization on the training fields. Version 1.0.1 makes the dataset loader preserve the saved normalization and applies training-statistic estimation during forward training.
+
 ## Run the SVI–NUTS benchmark
 
 ```bash
@@ -95,4 +97,4 @@ The benchmark compares approximations to a common posterior defined by the suppl
 
 ## Citation and license
 
-Version 1.0.0 is described in `CITATION.cff`. Cite the versioned release when reusing the code, synthetic data, or checkpoints. The repository is distributed under the MIT license in `LICENSE`.
+Version 1.0.1 is described in `CITATION.cff`. Cite the versioned release when reusing the code, synthetic data, or checkpoints. The repository is distributed under the MIT license in `LICENSE`.

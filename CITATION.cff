@@ -5,8 +5,8 @@ title: "Physics-guided variational Bayesian groundwater inversion"
 authors:
   - family-names: Liu
     given-names: Fan
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-11-12
 repository-code: "https://github.com/liufan612/physics-guided-bayesian-groundwater-inversion"
-url: "https://github.com/liufan612/physics-guided-bayesian-groundwater-inversion/releases/tag/v1.0.0"
+url: "https://github.com/liufan612/physics-guided-bayesian-groundwater-inversion/releases/tag/v1.0.1"
 license: MIT

@@ -523,7 +523,6 @@ def load_dataset_from_dir(source_dir: Path) -> dict[str, np.ndarray]:
     stats = json.loads(stats_path.read_text(encoding="utf-8"))
     dataset = {k: loaded[k] for k in ["x", "head", "logk", "scenario", "split", "case_id"]}
     dataset["stats"] = stats
-    ensure_train_normalization_stats(dataset)
     return dataset
 
 

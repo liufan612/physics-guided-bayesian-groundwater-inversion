@@ -19,7 +19,6 @@ from run_sparse_head_inverse_unet_experiment import SparseInverseUNet, make_spar
 from run_mf6_pilot_experiments import (  # noqa: E402
     build_kl_basis,
     choose_obs,
-    ensure_train_normalization_stats,
     field_metrics,
     idw_interpolate,
     load_dataset_from_dir,
@@ -167,7 +166,6 @@ def main() -> int:
     cfg.logk_noise = args.logk_noise
     cfg.seed = args.seed
     dataset = load_dataset_from_dir(Path(args.source_dir))
-    ensure_train_normalization_stats(dataset)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     surrogate, surrogate_metrics = load_surrogate(dataset, cfg, Path(args.surrogate_dir))
     if surrogate is None:
