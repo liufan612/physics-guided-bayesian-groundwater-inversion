@@ -91,10 +91,6 @@ python WR_rebuild/scripts/make_svi_mcmc_benchmark_figures.py --result-dir WR_reb
 
 The scripts directory also contains the original forward-baseline, common-prior head-observation, noise-sensitivity, and variational-guide experiments. Their command-line options are available through `--help`.
 
-## Interpretation and reproducibility
-
-The benchmark compares approximations to a common posterior defined by the supplied prior, likelihood, observations, and frozen surrogate. The synthetic prior construction reuses conductivity observations. Posterior spread describes conditional ambiguity under these modeling choices. The 15 `eval` fields were used for model selection and evaluation in the study. Retraining and timing depend on the numerical libraries and hardware. The supplied checkpoints and archived posterior arrays support direct examination of the reported comparison.
-
 ## Citation and license
 
 Version 1.0.1 is described in `CITATION.cff`. Cite the versioned release when reusing the code, synthetic data, or checkpoints. The repository is distributed under the MIT license in `LICENSE`.
